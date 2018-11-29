@@ -22,9 +22,16 @@
   	<servlet-name>ActivityServlet</servlet-name>
   	<servlet-class>com.psicocare.controllers.ActivityServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ResultadosServlett</display-name>
+  	<servlet-name>ResultadosServlett</servlet-name>
+  	<servlet-class>com.psicocare.controllers.ResultadosServlett</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>TaketestServlet</servlet-name>
-  	<url-pattern>/taketest</url-pattern>
+  	<url-pattern>/testquestion1</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>MenuServlet</servlet-name>
@@ -33,5 +40,9 @@
   <servlet-mapping>
   	<servlet-name>ActivityServlet</servlet-name>
   	<url-pattern>/activity</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ResultadosServlett</servlet-name>
+  	<url-pattern>/Resultados</url-pattern>
   </servlet-mapping>
 </web-app>
