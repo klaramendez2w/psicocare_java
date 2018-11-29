@@ -1,0 +1,57 @@
+SELECT dni,pin,uid,nombre,nomina FROM cliente c WHERE pin="1234" AND dni="999999999"
+
+SELECT `nombre`, `numero`, `saldo` FROM `cuenta` WHERE 1 
+
+SELECT cuenta.cid,cuenta.nombre,cuenta.numero,cuenta.saldo FROM cuenta, cliente_cuenta `cliente_cuenta` WHERE cuenta.cid=cliente_cuenta.cuenta AND cliente_cuenta.cliente=2 
+
+
+SELECT cuenta.cid,cuenta.nombre,cuenta.numero,cuenta.saldo FROM cuenta, cliente_cuenta,cliente WHERE cuenta.cid=cliente_cuenta.cuenta AND cliente_cuenta.cliente=cliente.uid AND cliente.dni="ppppppppp"
+
+
+
+en cmd dentro de C:\Users\Arranque 1\SLS\Software\UwAmp\bin\database\mysql-5.7.11\bin usar comando 
+mysql -uroot -p andresbank
+Enter password: ****
+
+
+-> show tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cliente
+cuenta
+Nomina
+
+
+
+
+
+
+
+
+show databases
+show database
+use mysql
+show tables' at line 1
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| andresbank         |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| prueba             |
+| sys                |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use mysql;
+Database changed
+mysql>
+
+
+CREATE USER 'andresuse'@localhost IDENTIFIED by '1234';
+
+ GRANT ALL PRIVILEGES ON andresbank.* TO 'andresuse'@localhost;
+ FLUSH PRIVILEGES;
+
+mysql -uroot -u andresuse -p andresbank
