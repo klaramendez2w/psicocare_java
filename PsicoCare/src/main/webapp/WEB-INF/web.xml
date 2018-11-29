@@ -4,9 +4,9 @@
   <servlet>
   	<description>
   	</description>
-  	<display-name>TaketestServlet</display-name>
-  	<servlet-name>TaketestServlet</servlet-name>
-  	<servlet-class>com.psicocare.controllers.TaketestServlet</servlet-class>
+  	<display-name>TakeTest1Servlet</display-name>
+  	<servlet-name>TakeTest1Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.TakeTest1Servlet</servlet-class>
   </servlet>
   <servlet>
   	<description>
@@ -22,9 +22,37 @@
   	<servlet-name>ActivityServlet</servlet-name>
   	<servlet-class>com.psicocare.controllers.ActivityServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TakeTest2Servlet</display-name>
+  	<servlet-name>TakeTest2Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.TakeTest2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TakeTest3Servlet</display-name>
+  	<servlet-name>TakeTest3Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.TakeTest3Servlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TakeTest4Servlet</display-name>
+  	<servlet-name>TakeTest4Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.TakeTest4Servlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TakeTest5Servlet</display-name>
+  	<servlet-name>TakeTest5Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.TakeTest5Servlet</servlet-class>
+  </servlet>
   <servlet-mapping>
-  	<servlet-name>TaketestServlet</servlet-name>
-  	<url-pattern>/taketest</url-pattern>
+  	<servlet-name>TakeTest1Servlet</servlet-name>
+  	<url-pattern>/test</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>MenuServlet</servlet-name>
@@ -33,5 +61,21 @@
   <servlet-mapping>
   	<servlet-name>ActivityServlet</servlet-name>
   	<url-pattern>/activity</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TakeTest2Servlet</servlet-name>
+  	<url-pattern>/test2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TakeTest3Servlet</servlet-name>
+  	<url-pattern>/test3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TakeTest4Servlet</servlet-name>
+  	<url-pattern>/test4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TakeTest5Servlet</servlet-name>
+  	<url-pattern>/test5</url-pattern>
   </servlet-mapping>
 </web-app>
