@@ -12,6 +12,7 @@ public class Test {
 	private double depression; 
 	private double social_anxiety; 
 	private double stress;
+	
 	public Test(int tid, int respuesta1, int respuesta2, int resuesta3, int respuesta4, int respuesta5, double anxiety,
 			double depression, double social_anxiety, double stress) {
 		super();

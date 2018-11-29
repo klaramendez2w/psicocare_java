@@ -1,4 +1,37 @@
  
 <web-app version="3.1">
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TaketestServlet</display-name>
+  	<servlet-name>TaketestServlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.TaketestServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>MenuServlet</display-name>
+  	<servlet-name>MenuServlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.MenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ActivityServlet</display-name>
+  	<servlet-name>ActivityServlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.ActivityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TaketestServlet</servlet-name>
+  	<url-pattern>/taketest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MenuServlet</servlet-name>
+  	<url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ActivityServlet</servlet-name>
+  	<url-pattern>/activity</url-pattern>
+  </servlet-mapping>
 </web-app>
