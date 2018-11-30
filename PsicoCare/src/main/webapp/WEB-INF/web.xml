@@ -64,6 +64,15 @@
   <servlet>
   	<description>
   	</description>
+  	<display-name>LoginServlett</display-name>
+  	<servlet-name>LoginServlett</servlet-name>
+  	<servlet-class>com.psicocare.controllers.LoginServlett</servlet-class>
+  </servlet>
+=======
+<<<<<<< HEAD
+  <servlet>
+  	<description>
+  	</description>
   	<display-name>MenuServlet</display-name>
   	<servlet-name>MenuServlet</servlet-name>
   	<servlet-class>com.psicocare.controllers.MenuServlet</servlet-class>
@@ -105,12 +114,19 @@
   	<url-pattern>/menu</url-pattern>
   </servlet-mapping>
 =======
+>>>>>>> 4e4e8480255256f1bfd01e6d74591a1439102836
   
 >>>>>>> 1f83de86c5ee3f12166ded15e098be38e7dacdb1
   <servlet-mapping>
   	<servlet-name>RegisterServlett</servlet-name>
   	<url-pattern>/Register</url-pattern>
   </servlet-mapping>
+<<<<<<< HEAD
+  <servlet-mapping>
+  	<servlet-name>LoginServlett</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+=======
 <<<<<<< HEAD
   <servlet-mapping>
   	<servlet-name>Activity2Servlet</servlet-name>
@@ -125,6 +141,7 @@
   	<url-pattern>/Activity4</url-pattern>
   </servlet-mapping>
 =======
+>>>>>>> 4e4e8480255256f1bfd01e6d74591a1439102836
 
 >>>>>>> 1f83de86c5ee3f12166ded15e098be38e7dacdb1
 </web-app>

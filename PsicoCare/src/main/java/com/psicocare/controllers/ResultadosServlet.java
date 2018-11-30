@@ -33,30 +33,28 @@ public class ResultadosServlet extends HttpServlet {
 	// MEtodos que generan las 4 componentes, Quizas es mejor que sean metodos desde un modelo?//		
 		Double Anxiety = R1b+R2b+R3b+R4b+R5b;
 		Double Stress = R1b+R2b+R3b+R4b+R5b;
-		Double Socialanxiety =R1b+R2b+R3b+R4b+R5b;;
+		Double Socialanxiety = R1b+R2b+R3b+R4b+R5b;
 		Double Depression = R1b+R2b+R3b+R4b+R5b;;
 		
 		
-	
-
 		// Pasamos los datos (mochila) para que se muestre en las barras de resultados de JSP//
 		request.setAttribute("anxiety",Anxiety);
 		request.setAttribute("depression",Depression);
 		request.setAttribute("socialanxiety",Socialanxiety);
 		request.setAttribute("stress",Stress);
 
-		//Reflejar valores en la grafica? BONUS//
-		
+		//Los metemos en la sesion con los nombres indicados//
 		
 		   HttpSession session = request.getSession();
 		    session.setAttribute("Anxiety", Anxiety);		
 		    session.setAttribute("Depression", Anxiety);		
 		    session.setAttribute("Stress", Stress);		
-		    session.setAttribute("Anxiety", Anxiety);		
+		    session.setAttribute("Socialanxiety", Socialanxiety);		
 
+
+			  
 		// Mostrar en resultados.jsp(ruta /Resultados)//
 		request.getRequestDispatcher("./resultados.jsp").forward(request, response);
-		doGet(request, response);
 
 		
 

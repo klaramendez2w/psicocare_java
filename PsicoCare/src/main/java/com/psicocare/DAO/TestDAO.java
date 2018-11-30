@@ -25,36 +25,40 @@ public class TestDAO {
 	}
 
 	// Metodo para validar los campos del Registro (register)
-	public Boolean validateregisterform(String nombrerec, String emailrec, String userrec, String password1rec,
+	public int validateregisterform(String nombrerec, String emailrec, String userrec, String password1rec,
 			String password2rec) {
 
-		Boolean ok = true;
+		int ok = 1;
 		// HAY QUE AÑADIR VALIDACION REGEX (Copiando la de JS)
-		if ((nombrerec == null) || (nombrerec == "")) {
-			ok = false;
+		if ((nombrerec == null) || (nombrerec == "")||(nombrerec.length()<=3)) {//.length comprueba el numero de caracteres
+			ok = 0;
 			System.out.println("1 mal");
 		}
-		if ((emailrec == null) || (emailrec == "")) {
-			ok = false;
+		if ((emailrec == null) || (emailrec == "")||(emailrec.indexOf("@")!= 1)) {//Comprobar si mail (simplemente si no tiene una @
+			ok = 0;
 			System.out.println("2 mal");
 		}
-		if ((userrec == null) || (userrec == "")) {
-			ok = false;
+		if ((userrec == null) || (userrec == "")||(userrec.length()<=3)) {
+			ok = 0;
 			System.out.println("3 mal");
 		}
-		if ((password1rec == null) || (password1rec == "") || (password1rec != password2rec)) {
-			ok = false;
+		if ((password1rec == null) || (password1rec == "") || (password1rec != password2rec)||(password1rec.length()<=3)) {
+			ok = 0;
 			System.out.println(password1rec + "!=" + password2rec);
 			System.out.println("4 mal");
 		}
 
+		
+
 		else {
 
 			System.out.println(ok);
+			System.out.println("Todo bn");
+			return ok;
+
 		}
 		// String regex = "[a-zA-Z0-9\\._\\-]{3,}";
 		// OR || OR//
-		System.out.println("Todo bn");
 
 		return ok;
 
@@ -66,7 +70,7 @@ public class TestDAO {
 		
 		String url = "jdbc:mysql://localhost/PsicoCare";
 
-		Connection conn = DriverManager.getConnection(url, "psicocare_user", "psicokiller");
+		 Connection conn = datasource.getConnection();
 		conn.setAutoCommit(false);
 		try {	
 		String sql = "INSERT INTO test( respuesta1, respuesta2, respuesta3, respuesta4, respuesta5, anxiety, depression, social_anxiety, stress) VALUES (?,?,?,?,?,?,?,?,?);";
@@ -116,6 +120,23 @@ public class TestDAO {
 		}
 
 		conn.close();
+		return ok;
+	}
+
+	public boolean validatecomponentes(Double anxiedad, Double depresion, Double estres, Double anxiedadsocial) {
+
+		boolean ok=false;
+		
+
+		if ((anxiedad instanceof Double)&&(anxiedad<=100)&&(depresion instanceof Double)&&(depresion<=100)&&(estres instanceof Double)&&(estres<=100)&&(anxiedadsocial instanceof Double)&&(anxiedadsocial<=100)) {
+			//
+			ok=true;
+			
+		}
+
+		else {ok=false;}
+		
+		
 		return ok;
 	}
 

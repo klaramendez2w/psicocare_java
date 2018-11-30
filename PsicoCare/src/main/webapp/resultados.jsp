@@ -20,46 +20,47 @@
     <Section>
 
         <div id="anxiety">
-         <h2>Anxiety</h2>
-            <progress min="0" max="100" value="${anxiety}"></progress>
+         <h2>Anxiety</h2><!-- Los progress id son para que radargraph.js coja los valores a representar -->
+            <progress id="progressbaranxiety" min="0" max="100" value="${anxiety}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
            
         </div>
 
         <div id="depression">
             <h2>Depression</h2>
-            <progress min="0" max="100" value="${depression}"></progress>
+            <progress id="progressbardepression" min="0" max="100" value="${depression}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
             
         </div>
 
         <div id="stress">
             <h2>Stress</h2>
-            <progress min="0" max="100" value="${stress}"></progress>
+            <progress id="progressbarstress" min="0" max="100" value="${stress}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
             
         </div>
 
-        <div id="social anxiety"><!--colores de las graficas foto-->
+        <div id="socialanxiety"><!--colores de las graficas foto-->
             <h2>Social Anxiety</h2>
-            <progress min="0" max="100" value="${socialanxiety}"></progress>
+            <progress id="progressbarsocialanxiety" min="0" max="100" value="${socialanxiety}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
            
         </div>
 
     </Section>
-<table style="margin-left:450px;"><tr><td><div id="chart"></div></td></tr></table>
+     <!--  grafico dinamico de https://codepen.io/Synvox/pen/iHbxE,https://codepen.io/anon/pen/vQvYdm-->
+    
+<table style="margin-left:300px;"><tr><td><div id="chart"></div></td></tr></table>
 
 
     <footer>
         <!--      <img class="responsive-img" src="IMG/diagramaresultados.png">-->
 
- <!-- Intento de grafico dinamico de https://codepen.io/Synvox/pen/iHbxE,https://codepen.io/anon/pen/vQvYdm-->
 
             <div id="registerdecorado">      
             <p style="font-size: 20px;">Register with us to save your results and use our activities.</p>
             <form  method="POST" action="Register">
-                <input type="submit" value="Register" />
+                <input style="margin-left:300px;"  type="submit" value="Register" />
                 <p> </p>
             </div>
             </form>
