@@ -6,7 +6,8 @@ list-style-type:  none;
   font-size:28px; 
   text-align:center;
   }
-
+section .hidden {
+  display: none;
   .inputines
   {
     text-align:center;
@@ -141,6 +142,8 @@ header  {
   position: relative;
 }
 
+
+}
 .blue.lighten-3 {
   background-color: #90CAF9 !important;
   border: none;

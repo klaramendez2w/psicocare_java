@@ -79,7 +79,7 @@
         <table style="align-content: center; margin:auto;">
 
             <tr>
-                <td><a id="res3"href="test2.html"><img class="vuelta" src="IMG/arrow.png"></a></td>
+                <td><a id="res3"href="test2.jsp"><img class="vuelta" src="IMG/arrow.png"></a></td>
                 <td><label id="res2" for="total">
                         <p>&nbsp;&nbsp;Total progress 3 out of 5</p>
                 </td>
@@ -90,7 +90,7 @@
                             3 of 5
                         </progress> </div>
                 </td>
-                <td> <a   id="res1" href="test4.html"><img class="ida" src="IMG/arrow.png"> </a></td>
+                <td> <a   id="res1" href="test4.jsp"><img class="ida" src="IMG/arrow.png"> </a></td>
             </tr>
         </table>
     </footer>

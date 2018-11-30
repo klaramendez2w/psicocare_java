@@ -95,13 +95,11 @@
 						</td>
 					</tr>
 
-
+</section>
 				</table>
 
-				</section>
-
 				<tr>
-					<td><a id="res3" href="test4.html"><img class="vuelta"
+					<td><a id="res3" href="test4.jsp"><img class="vuelta"
 							src="IMG/arrow.png"></a></td>
 					<td><label for="total"></label>
 						<p id=res2 style="font-family: gotham; color: black;">&nbsp;&nbsp;Total
@@ -113,7 +111,7 @@
 								of 5 </progress>
 						</div>
 					</td>
-					<td><a id="res1" href="resultados.html"><img
+					<td><a id="res1" href="resultados.jsp"><img
 							src="IMG/submit.png"> </a></td>
 				</tr>
 			</table>

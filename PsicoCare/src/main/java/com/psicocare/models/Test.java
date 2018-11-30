@@ -5,7 +5,7 @@ public class Test {
 	private int tid; 
 	private int respuesta1; 
 	private int respuesta2; 
-	private int resuesta3; 
+	private int respuesta3; 
 	private int respuesta4; 
 	private int respuesta5; 
 	private double anxiety; 
@@ -13,13 +13,19 @@ public class Test {
 	private double social_anxiety; 
 	private double stress;
 	
-	public Test(int tid, int respuesta1, int respuesta2, int resuesta3, int respuesta4, int respuesta5, double anxiety,
+	
+	
+	public Test() {		
+
+	}
+	
+	public Test(int tid, int respuesta1, int respuesta2, int respuesta3, int respuesta4, int respuesta5, double anxiety,
 			double depression, double social_anxiety, double stress) {
 		super();
 		this.tid = tid;
 		this.respuesta1 = respuesta1;
 		this.respuesta2 = respuesta2;
-		this.resuesta3 = resuesta3;
+		this.respuesta3 = respuesta3;
 		this.respuesta4 = respuesta4;
 		this.respuesta5 = respuesta5;
 		this.anxiety = anxiety;
@@ -46,10 +52,10 @@ public class Test {
 		this.respuesta2 = respuesta2;
 	}
 	public int getResuesta3() {
-		return resuesta3;
+		return respuesta3;
 	}
-	public void setResuesta3(int resuesta3) {
-		this.resuesta3 = resuesta3;
+	public void setRespuesta3(int respuesta3) {
+		this.respuesta3 = respuesta3;
 	}
 	public int getRespuesta4() {
 		return respuesta4;
@@ -88,5 +94,14 @@ public class Test {
 		this.stress = stress;
 	} 
 
+	public int getTest(int paso) {
+		
+	
+		
+		
+		
+		return paso;
+		
+	}
 
 }
