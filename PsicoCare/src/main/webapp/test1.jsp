@@ -19,30 +19,19 @@
                     alt="Logo" id="logo"></div>
 
 
-            <!--Le falta el efecto sombra y quizas reposicionar logo-->
-
-
         </nav>
 
 
     </header>
     <section>
         <h1><u>Starting Questionary</u></h1>
-        <!--Increase font size,place center, colorfull design-->
+        
 
         <br>
         <ul style="list-style-type:  none;">
-            <!--Unordered HTML List - Choose List Item Marker
-    The CSS list-style-type property is used to define the style of the list item marker:
-    Value 	Description
-    disc 	Sets the list item marker to a bullet (default)
-    circle 	Sets the list item marker to a circle
-    square 	Sets the list item marker to a square
-    none 	The list items will not be marked  (https://www.w3schools.com/HTML/html_lists.asp)-->
+            
 
             <li style="font-size:28px; text-align:center">1. How do you feel about your future?<br></li>
-
-
 
         </ul>
 
@@ -87,30 +76,6 @@
             </progress>
         </div>
         <a href="test2.html" id="res1"><img class="ida" src="IMG/arrow.png"> </a>
-
-
-        <!-- <table style="align-content: center; margin:auto;">
-                <tr>
-                    <td>                        <label for="total"> Total progress 1 out of 5
-                        </td>
-                    <td> 
-                        <div class="progress-example; text-align:left;">
-                            <progress id="total" name="total" max="5" value="1">
-                                1 of 5
-                            </progress>
-                         </div>
-                        </td>
-                        <td>        <a href="test2.html"  id="res1"><img class="ida" src="IMG/arrow.png"> </a>  </td>
-                </tr>
-        Circles? progress bar with circles?
-    </table>
--->
-
-
-
-
-
-
     </footer>
 
 </body>
