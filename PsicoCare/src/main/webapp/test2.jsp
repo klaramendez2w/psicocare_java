@@ -1,3 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,27 +20,17 @@
         <nav id="navid"  >
                     <div  style="position: relative; display: inline-block;" class="brand-logo">PsicoCare   <img  src="./IMG/logo photoshopeado2.png" alt="Logo" id="logo"></div> 
                  
-            
-                <!--Le falta el efecto sombra y quizas reposicionar logo-->
-
         
         </nav>
-
-      
+  
     </header>
+    
     <section>
         <h1><u>Question 2 out of 5. </u></h1>
-        <!--Increase font size,place center, colorfull design-->
 
         <br>
         <ul>
-            <!--Unordered HTML List - Choose List Item Marker
-    The CSS list-style-type property is used to define the style of the list item marker:
-    Value 	Description
-    disc 	Sets the list item marker to a bullet (default)
-    circle 	Sets the list item marker to a circle
-    square 	Sets the list item marker to a square
-    none 	The list items will not be marked  (https://www.w3schools.com/HTML/html_lists.asp)-->
+            
             <form id="loginform" method="POST">
                 <li>2. How do you feel about the next statement?<br></li>
                 <label for="question2" style=><br>
@@ -68,15 +63,7 @@
                 <td>&nbsp;Mostly disagree&nbsp;</td>
             </tr>
 
-
-
-
-
-
         </table>
-
-
-
         <br><br>
 
 
@@ -84,11 +71,8 @@
 
     </section>
 
-
     <footer>
-        <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html style="border:5px solid black; align-content: center;width: 400px;-->
-
-
+       
         <table style="align-content: center; margin:auto;">
 
             <tr>
@@ -107,10 +91,7 @@
             </tr>
         </table>
 
-
-
     </footer>
-
 
 </body>
 <script src="JS/jquery-3.3.1.min.js"></script>

@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,21 +29,12 @@
                 </header>
     <section>
         <h1><u>Question 3 out of 5 </u></h1>
-        <!--Increase font size,place center, colorfull design-->
+       
 
         <br>
         <ul>
-            <!--Unordered HTML List - Choose List Item Marker
-
-    The CSS list-style-type property is used to define the style of the list item marker:
-    Value 	Description
-    disc 	Sets the list item marker to a bullet (default)
-    circle 	Sets the list item marker to a circle
-    square 	Sets the list item marker to a square
-    none 	The list items will not be marked  (https://www.w3schools.com/HTML/html_lists.asp)-->
 
             <li>3. How do you feel about the next statement?<br></li>
-
 
         </ul>
 
@@ -49,11 +44,6 @@
                 as  completely agreeing</p>
         </label>
 
-
-
-
-
-            <!--"align-content: center; margin:right; font-size:19px;"-->
             <table  style="align-content: center; margin:auto;">
                  <form  id="loginform" method="POST" >    
 
@@ -82,18 +72,10 @@
                     </form>
                 </table>
 
-           
-
-
-
-
     </section>
 
-
     <footer>
-        <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html style="border:5px solid black; align-content: center;width: 400px;-->
-
-
+     
         <table style="align-content: center; margin:auto;">
 
             <tr>
