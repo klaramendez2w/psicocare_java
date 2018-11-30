@@ -31,14 +31,14 @@
 					<div id="titulo">
 						<h1>Welcome to PsicoCare
 						</h1>
+						<!-- En caso de excepcion, mostrar error --><div id=errorsubida >${errorsubida}</div>
+						
 						<hr />
 					</div>
 				</div>
 				<div class="main-login main-center">
-
 					<div id="mensaje" class="error hide">Completa el registro</div>
 					<form id='loginform' class="form-horizontal" method="POST" action="">
-
 						<div id="tunombre" class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Your Name</label>
 							<div class="cols-sm-10">
@@ -57,7 +57,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
 									<input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" required />
-									<div id="erroremail" class=" error hide">Introduce un email correcto</div>
+									<div id="erroremail" class=" error hide">Introduce un email correcto </div>
 								</div>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 							</div>
 						</div>
 						<div id="boton" class="form-group ">
-							<button type="button" id="register" class="btn btn-primary btn-lg btn-block login-button btn-outline-primary">Register</button>
+							<button type="submit" id="register" class="btn btn-primary btn-lg btn-block login-button btn-outline-primary">Register</button>
 						</div>
 						<div id="login" class="login-register">
 							<a href="login.html">Login</a>

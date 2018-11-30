@@ -48,13 +48,17 @@
         </div>
 
     </Section>
+<table style="margin-left:450px;"><tr><td><div id="chart"></div></td></tr></table>
+
 
     <footer>
-            <img class="responsive-img" src="IMG/diagramaresultados.png">
+        <!--      <img class="responsive-img" src="IMG/diagramaresultados.png">-->
+
+ <!-- Intento de grafico dinamico de https://codepen.io/Synvox/pen/iHbxE,https://codepen.io/anon/pen/vQvYdm-->
 
             <div id="registerdecorado">      
             <p style="font-size: 20px;">Register with us to save your results and use our activities.</p>
-            <form action="welcome2.html">
+            <form  method="POST" action="Register">
                 <input type="submit" value="Register" />
                 <p> </p>
             </div>
@@ -62,5 +66,7 @@
     </footer>
 
 </body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+<script src="./JS/radargraph.js"></script>
 </html>

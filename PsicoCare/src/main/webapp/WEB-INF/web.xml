@@ -1,5 +1,6 @@
 
 <web-app version="3.1">
+
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
 		<description>
@@ -51,5 +52,18 @@
 		<servlet-name>ResultadosServlet</servlet-name>
 		<url-pattern>/resultados</url-pattern>
 	</servlet-mapping>
+
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>RegisterServlett</display-name>
+  	<servlet-name>RegisterServlett</servlet-name>
+  	<servlet-class>com.psicocare.controllers.RegisterServlett</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>RegisterServlett</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
 
 </web-app>
