@@ -82,12 +82,32 @@ public class UserDAO {
 
 		conn.close();
 		return ok;
-	}	
+	}
+
+	public boolean getuserbyusarnameormailandpassword(String nombrerec, String passwordrec) throws SQLException {
+
+		boolean ok=false;
+		
+		String url = "jdbc:mysql://localhost/PsicoCare";
+
+		Connection conn = DriverManager.getConnection(url, "psicocare_user", "psicokiller");
+		conn.setAutoCommit(false);
+		
+		String sql = "SELECT `email`, `name`, `password`, `test` FROM `usuario` WHERE 1";
 		
 		
 		
 		
 		
+		
+		return ok;
+		
+		
+		
+		
+		
+		
+	}
 		
 		
 	}

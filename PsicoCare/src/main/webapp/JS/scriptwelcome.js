@@ -26,8 +26,9 @@ if (formValid && passEqs) {
         console.log(data);
         if (data.result) {
             localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario)); //almacenamos los datos introducidos por el usuario en el localStorage
+            document.getElementById("loginform").submit();//POST FORM
 
-            window.location.href = 'menu.html'; //Una vez registrados nos redirige al menú principal.
+   //   window.location.href = 'menu.html'; //Una vez registrados nos redirige al menú principal.
         } else {
             document.getElementById('passwordnomatch').classList.remove('hide'); //mensaje de error
         }

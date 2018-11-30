@@ -32,8 +32,7 @@ public class RegisterServlett extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-	
-	
+
 
 		request.getRequestDispatcher("./welcome2.jsp").forward(request, response);
 
@@ -43,7 +42,8 @@ public class RegisterServlett extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		doGet(request, response);
+
 		//Capturamos las variables metidas en el formulario de registro*/
 		String nombrerec= request.getParameter("name");
 		String emailrec= request.getParameter("email");
@@ -51,15 +51,14 @@ public class RegisterServlett extends HttpServlet {
 		String password1rec= request.getParameter("password");
 		String password2rec= request.getParameter("confirm");
 
-		
 		//Capturamos las variables metidas en la sesion tanto las respuestas como l//
 		   	HttpSession session = request.getSession();
-		  Double anxiedad=	(Double) session.getAttribute("anxiety");		
-		  Double depresion=	(Double)    session.getAttribute("depression");		
+		  Double anxiedad=	(Double) session.getAttribute("Anxiety");		
+		  Double depresion=	(Double)    session.getAttribute("Depression");		
 		  Double estres=	(Double)   session.getAttribute("Stress");		
-		  Double anxiedadsocial=	(Double)   session.getAttribute("socialanxiety");	
-		  
-
+		  Double anxiedadsocial=	(Double)   session.getAttribute("Socialanxiety");	
+			
+	
 		  //Obtener usuario de la sesion//
 		  //Comprobar nombre en resultados//
 		    
@@ -67,13 +66,15 @@ public class RegisterServlett extends HttpServlet {
 		    
 		  try {
 			  
-			boolean ok;  
 			  
-			ok=TestDAO.getInstance().validateregisterform(nombrerec,emailrec,userrec,password1rec,password2rec);
-			//Validar componentes almacenados en la sesion?
-			if(ok=true) {
+			int ok=TestDAO.getInstance().validateregisterform(nombrerec,emailrec,userrec,password1rec,password2rec);
+			System.out.println(TestDAO.getInstance().validateregisterform(nombrerec,emailrec,userrec,password1rec,password2rec));
 			
-			UserDAO.getInstance().subidausuario(nombrerec,emailrec,userrec,password1rec,anxiedad,depresion,estres,anxiedadsocial);	
+			System.out.println(TestDAO.getInstance().validatecomponentes(anxiedad,depresion,estres,anxiedadsocial));
+			//Validar componentes almacenados en la sesion?
+			if(ok==1) {
+			
+			//UserDAO.getInstance().subidausuario(nombrerec,emailrec,userrec,password1rec,anxiedad,depresion,estres,anxiedadsocial);	
 			
 			}
 			else {
@@ -86,14 +87,13 @@ public class RegisterServlett extends HttpServlet {
 		  }
 			catch (Exception e) {
 				// TODO Auto-generated catch block
-				e.getMessage();		
+				System.out.println(e.getMessage());		
 				request.setAttribute("errorsubida", "Hubo un error durante la subida, por favor intentalo otra vez");
 				
 			}
 			
 			
 	
-			doGet(request, response);
 
 			
 			

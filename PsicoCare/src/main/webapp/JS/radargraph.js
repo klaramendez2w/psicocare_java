@@ -1,13 +1,22 @@
 $(function(){
+	
+	let anxiety= (document.getElementById("progressbaranxiety").value)/10;
+	let depression=(document.getElementById("progressbardepression").value)/10;
+	let stress=(document.getElementById("progressbarstress").value)/10;
+	let socialanxiety=(document.getElementById("progressbarsocialanxiety").value)/10;
+
+	console.log(anxiety+" "+depression);
+	
+	
   $('#chart').radarChart({
     size: [500, 400],
     step: 1,
     title: "Title",
     values: {
-      "Anxiety": 4.1,
-      "Depression": 3.5,
-      "Social anxiety": 4,
-      "Stress": 3,
+      "Anxiety": anxiety,
+      "Depression": depression,
+      "Social anxiety": socialanxiety,
+      "Stress": stress,
    
     },
     showAxisLabels: true
@@ -58,7 +67,7 @@ $(function(){
     Radar.prototype.draw = function() {
       this.newCanvas('axis', 100);
       var min = 0;
-      var max = 0;
+      var max = 10;
       
       $.each(this.settings.values, function(i,val){
         if (val < min)
