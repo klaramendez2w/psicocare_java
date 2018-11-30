@@ -29,6 +29,13 @@
   	<servlet-name>ResultadosServlett</servlet-name>
   	<servlet-class>com.psicocare.controllers.ResultadosServlett</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>RegisterServlett</display-name>
+  	<servlet-name>RegisterServlett</servlet-name>
+  	<servlet-class>com.psicocare.controllers.RegisterServlett</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>TaketestServlet</servlet-name>
   	<url-pattern>/testquestion1</url-pattern>
@@ -43,6 +50,10 @@
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>ResultadosServlett</servlet-name>
-  	<url-pattern>/Resultados</url-pattern>
+  	<url-pattern>/Results</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlett</servlet-name>
+  	<url-pattern>/Register</url-pattern>
   </servlet-mapping>
 </web-app>

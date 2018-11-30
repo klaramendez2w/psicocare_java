@@ -38,15 +38,14 @@ public class ResultadosServlett extends HttpServlet {
 		Double R4b=Double.parseDouble(R4);
 		Double R5b=Double.parseDouble(R5);
 
-		// MEtodos que generan las 4 componentes//		
+	// MEtodos que generan las 4 componentes, Quizas es mejor que sean metodos desde un modelo?//		
 		Double Anxiety = R1b+R2b+R3b+R4b+R5b;
 		Double Stress = R1b+R2b+R3b+R4b+R5b;
 		Double Socialanxiety =R1b+R2b+R3b+R4b+R5b;;
 		Double Depression = R1b+R2b+R3b+R4b+R5b;;
 		
 		
-		System.out.println(R1b);
-		System.out.println(Anxiety);
+	
 
 		// Pasamos los datos (mochila) para que se muestre en las barras de resultados de JSP//
 		request.setAttribute("anxiety",Anxiety);
@@ -65,6 +64,7 @@ public class ResultadosServlett extends HttpServlet {
 
 		// Mostrar en resultados.jsp(ruta /Resultados)//
 		request.getRequestDispatcher("./resultados.jsp").forward(request, response);
+		doGet(request, response);
 
 		
 
@@ -72,12 +72,10 @@ public class ResultadosServlett extends HttpServlet {
 
 	
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	//Redireccion al servlet de Registro al pulsar en el boton "Register/	
+		response.sendRedirect("/Register");
+		//(ruta /Register)//
 	}
 
 }
