@@ -21,28 +21,28 @@
 
         <div id="anxiety">
          <h2>Anxiety</h2>
-            <progress min="0" max="100" value="72"></progress>
+            <progress min="0" max="100" value="${anxiety}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
            
         </div>
 
         <div id="depression">
             <h2>Depression</h2>
-            <progress min="0" max="200" value="50"></progress>
+            <progress min="0" max="100" value="${depression}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
             
         </div>
 
         <div id="stress">
             <h2>Stress</h2>
-            <progress min="0" max="200" value="89"></progress>
+            <progress min="0" max="100" value="${stress}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
             
         </div>
 
         <div id="social anxiety"><!--colores de las graficas foto-->
             <h2>Social Anxiety</h2>
-            <progress min="0" max="200" value="67"></progress>
+            <progress min="0" max="100" value="${socialanxiety}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
            
         </div>
