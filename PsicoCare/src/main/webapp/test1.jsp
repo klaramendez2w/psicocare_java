@@ -75,7 +75,7 @@
                 1 of 5
             </progress>
         </div>
-        <a href="test2.html" id="res1"><img class="ida" src="IMG/arrow.png"> </a>
+        <a href="test2.jsp" id="res1"><img class="ida" src="IMG/arrow.png"> </a>
     </footer>
 
 </body>
