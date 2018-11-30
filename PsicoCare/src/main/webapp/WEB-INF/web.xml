@@ -60,10 +60,71 @@
   	<servlet-name>RegisterServlett</servlet-name>
   	<servlet-class>com.psicocare.controllers.RegisterServlett</servlet-class>
   </servlet>
+<<<<<<< HEAD
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>MenuServlet</display-name>
+  	<servlet-name>MenuServlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.MenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ActivityServlet</display-name>
+  	<servlet-name>ActivityServlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.ActivityServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Activity2Servlet</display-name>
+  	<servlet-name>Activity2Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.Activity2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Activity3Servlet</display-name>
+  	<servlet-name>Activity3Servlet</servlet-name>
+  	<servlet-class>com.psicocare.controllers.Activity3Servlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Activity4</display-name>
+  	<servlet-name>Activity4</servlet-name>
+  	<servlet-class>com.psicocare.controllers.Activity4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TaketestServlet</servlet-name>
+  	<url-pattern>/taketest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MenuServlet</servlet-name>
+  	<url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+=======
   
+>>>>>>> 1f83de86c5ee3f12166ded15e098be38e7dacdb1
   <servlet-mapping>
   	<servlet-name>RegisterServlett</servlet-name>
   	<url-pattern>/Register</url-pattern>
   </servlet-mapping>
+<<<<<<< HEAD
+  <servlet-mapping>
+  	<servlet-name>Activity2Servlet</servlet-name>
+  	<url-pattern>/Activity2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Activity3Servlet</servlet-name>
+  	<url-pattern>/Activity3Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Activity4</servlet-name>
+  	<url-pattern>/Activity4</url-pattern>
+  </servlet-mapping>
+=======
 
+>>>>>>> 1f83de86c5ee3f12166ded15e098be38e7dacdb1
 </web-app>
