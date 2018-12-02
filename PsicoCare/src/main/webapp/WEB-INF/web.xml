@@ -1,147 +1,79 @@
-
-<web-app version="3.1">
-
-	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
-		<description>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <description>
 		</description>
-		<display-name>TakeTest1Servlet</display-name>
-		<servlet-name>TakeTest1Servlet</servlet-name>
-		<servlet-class>com.psicocare.controllers.TakeTest1Servlet
+    <display-name>TakeTest1Servlet</display-name>
+    <servlet-name>TakeTest1Servlet</servlet-name>
+    <servlet-class>com.psicocare.controllers.TakeTest1Servlet
 		</servlet-class>
-	</servlet>
-	<servlet>
-		<description>
+  </servlet>
+  <servlet>
+    <description>
 		</description>
-		<display-name>MenuServlet</display-name>
-		<servlet-name>MenuServlet</servlet-name>
-		<servlet-class>com.psicocare.controllers.MenuServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>ActivityServlet</display-name>
-		<servlet-name>ActivityServlet</servlet-name>
-		<servlet-class>com.psicocare.controllers.ActivityServlet
+    <display-name>MenuServlet</display-name>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-class>com.psicocare.controllers.MenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>ResultadosServlet</display-name>
+    <servlet-name>ResultadosServlet</servlet-name>
+    <servlet-class>com.psicocare.controllers.ResultadosServlet
 		</servlet-class>
-	</servlet>
-	<servlet>
-		<display-name>ResultadosServlet</display-name>
-		<servlet-name>ResultadosServlet</servlet-name>
-		<servlet-class>com.psicocare.controllers.ResultadosServlet
-		</servlet-class>
-	</servlet>
-
-
-	<servlet-mapping>
-		<servlet-name>TakeTest1Servlet</servlet-name>
-		<url-pattern>/test</url-pattern>
-	</servlet-mapping>
-
-	<servlet-mapping>
-		<servlet-name>MenuServlet</servlet-name>
-		<url-pattern>/menu</url-pattern>
-	</servlet-mapping>
-
-	<servlet-mapping>
-		<servlet-name>ActivityServlet</servlet-name>
-		<url-pattern>/activity</url-pattern>
-	</servlet-mapping>
-
-	<servlet-mapping>
-		<servlet-name>ResultadosServlet</servlet-name>
-		<url-pattern>/resultados</url-pattern>
-	</servlet-mapping>
-
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>RegisterServlett</display-name>
-  	<servlet-name>RegisterServlett</servlet-name>
-  	<servlet-class>com.psicocare.controllers.RegisterServlett</servlet-class>
-  </servlet>
-<<<<<<< HEAD
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>LoginServlett</display-name>
-  	<servlet-name>LoginServlett</servlet-name>
-  	<servlet-class>com.psicocare.controllers.LoginServlett</servlet-class>
-  </servlet>
-=======
-<<<<<<< HEAD
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>MenuServlet</display-name>
-  	<servlet-name>MenuServlet</servlet-name>
-  	<servlet-class>com.psicocare.controllers.MenuServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>ActivityServlet</display-name>
-  	<servlet-name>ActivityServlet</servlet-name>
-  	<servlet-class>com.psicocare.controllers.ActivityServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>Activity2Servlet</display-name>
-  	<servlet-name>Activity2Servlet</servlet-name>
-  	<servlet-class>com.psicocare.controllers.Activity2Servlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>Activity3Servlet</display-name>
-  	<servlet-name>Activity3Servlet</servlet-name>
-  	<servlet-class>com.psicocare.controllers.Activity3Servlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>Activity4</display-name>
-  	<servlet-name>Activity4</servlet-name>
-  	<servlet-class>com.psicocare.controllers.Activity4</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>TaketestServlet</servlet-name>
-  	<url-pattern>/taketest</url-pattern>
+    <servlet-name>TakeTest1Servlet</servlet-name>
+    <url-pattern>/test</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>MenuServlet</servlet-name>
-  	<url-pattern>/menu</url-pattern>
-  </servlet-mapping>
-=======
->>>>>>> 4e4e8480255256f1bfd01e6d74591a1439102836
-  
->>>>>>> 1f83de86c5ee3f12166ded15e098be38e7dacdb1
-  <servlet-mapping>
-  	<servlet-name>RegisterServlett</servlet-name>
-  	<url-pattern>/Register</url-pattern>
-  </servlet-mapping>
-<<<<<<< HEAD
-  <servlet-mapping>
-  	<servlet-name>LoginServlett</servlet-name>
-  	<url-pattern>/Login</url-pattern>
-  </servlet-mapping>
-=======
-<<<<<<< HEAD
-  <servlet-mapping>
-  	<servlet-name>Activity2Servlet</servlet-name>
-  	<url-pattern>/Activity2Servlet</url-pattern>
+    <servlet-name>MenuServlet</servlet-name>
+    <url-pattern>/menu</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>Activity3Servlet</servlet-name>
-  	<url-pattern>/Activity3Servlet</url-pattern>
+    <servlet-name>ResultadosServlet</servlet-name>
+    <url-pattern>/resultados</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>
+  	</description>
+    <display-name>RegisterServlett</display-name>
+    <servlet-name>RegisterServlett</servlet-name>
+    <servlet-class>com.psicocare.controllers.RegisterServlett</servlet-class>
+  </servlet>
+  <servlet>
+    <description>
+  	</description>
+    <display-name>LoginServlett</display-name>
+    <servlet-name>LoginServlett</servlet-name>
+    <servlet-class>com.psicocare.controllers.LoginServlett</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlett</servlet-name>
+    <url-pattern>/Register</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>Activity4</servlet-name>
-  	<url-pattern>/Activity4</url-pattern>
+    <servlet-name>LoginServlett</servlet-name>
+    <url-pattern>/Login</url-pattern>
   </servlet-mapping>
-=======
->>>>>>> 4e4e8480255256f1bfd01e6d74591a1439102836
-
->>>>>>> 1f83de86c5ee3f12166ded15e098be38e7dacdb1
+  <servlet>
+    <description></description>
+    <display-name>ActivitiesServlet</display-name>
+    <servlet-name>ActivitiesServlet</servlet-name>
+    <servlet-class>com.psicocare.controllers.ActivitiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActivitiesServlet</servlet-name>
+    <url-pattern>/activities</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HomeActivitiesServlet</display-name>
+    <servlet-name>HomeActivitiesServlet</servlet-name>
+    <servlet-class>com.psicocare.controllers.HomeActivitiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeActivitiesServlet</servlet-name>
+    <url-pattern>/homeactivities</url-pattern>
+  </servlet-mapping>
 </web-app>
