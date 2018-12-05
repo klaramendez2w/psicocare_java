@@ -5,8 +5,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.psicocare.DAO.UserDAO;
+import com.psicocare.models.User;
 
 /**
  * Servlet implementation class LoginServlett
@@ -40,29 +42,41 @@ public class LoginServlett extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String nombrerec= request.getParameter("username");
-		String passwordrec= request.getParameter("password");
+		String emailrec= request.getParameter("username");
+	    String passwordrec= request.getParameter("password");
 		
 		
 		
-		
-		//Validar
-		
-		//Get access from database
-		
-		
-		
-		try {
-			UserDAO.getInstance().getuserbyusarnameormailandpassword(nombrerec,passwordrec);
-			//A ver si te subes de una puta vez 
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
-		
-		
-		
-		doGet(request, response);
-	}
+	 boolean check;
+	try {
+		check = UserDAO.getInstance().validateloginform(emailrec, passwordrec);
+		 if(check==true) { 	
+				//Get access from database
 
-}
+		 int Access= UserDAO.getInstance().getuserbymailandpassword(emailrec,passwordrec);
+		
+		 if(Access==0){   HttpSession session = request.getSession();
+		    session.setAttribute("login", emailrec);
+		    
+		    response.sendRedirect("menu");
+		    }}
+		 else{ System.out.println("El usuario no existe");	
+		 }
+		 }
+		 
+	 catch (Exception e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	} 
+	} 	} 
+	
+	
+	
+
+		
+	 
+		
+		
+	
+
+

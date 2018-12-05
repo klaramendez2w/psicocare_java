@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+ 
 
 public class TestDAO {
 
@@ -19,44 +20,53 @@ public class TestDAO {
 
 		return instance;
 	}
+	
+	
+	
+	//Esta funcion sirve para contar el numero de veces que un caracter aparece en una string
+	//En este caso lo usaremos para asegurarnos que el correo solo tiene una @
+	public int countChar(String str, char c)
+	{
+	    int count = 0;
 
-	private TestDAO() throws Exception {
-		Class.forName("com.mysql.jdbc.Driver").newInstance();// new com.mysql.jdbc.Driver
+	    for(int i=0; i < str.length()-1; i++)
+	    {    if(str.charAt(i) == c)
+	            count++;
+	    }
+
+	    return count;
 	}
 
 	// Metodo para validar los campos del Registro (register)
-	public int validateregisterform(String nombrerec, String emailrec, String userrec, String password1rec,
-			String password2rec) {
+	public int validateregisterform(String nombrerec, String emailrec, String userrec, String password1rec,	String password2rec) {
 
+		System.out.println("Empieza el metodo");
 		int ok = 1;
-		// HAY QUE AÑADIR VALIDACION REGEX (Copiando la de JS)
-		if ((nombrerec == null) || (nombrerec == "")||(nombrerec.length()<=3)) {//.length comprueba el numero de caracteres
+
+		if ((nombrerec == null) || (nombrerec.equals(""))||(nombrerec.length()<=3)) {//.length comprueba el numero de caracteres
 			ok = 0;
 			System.out.println("1 mal");
 		}
-		if ((emailrec == null) || (emailrec == "")||(emailrec.indexOf("@")!= 1)) {//Comprobar si mail (simplemente si no tiene una @
+		 if ((emailrec == null) || (emailrec.equals(""))||(countChar(emailrec,'@')!= 1)) {//Comprobar si mail (simplemente si no tiene una @
+		
 			ok = 0;
 			System.out.println("2 mal");
 		}
-		if ((userrec == null) || (userrec == "")||(userrec.length()<=3)) {
+		 if ((userrec == null) || (userrec.equals(""))||(userrec.length()<=3)) {
 			ok = 0;
 			System.out.println("3 mal");
 		}
-		if ((password1rec == null) || (password1rec == "") || (password1rec != password2rec)||(password1rec.length()<=3)) {
+		 if ((password1rec == null) || (password1rec.equals("")) || (!password1rec.equals( password2rec))||(password1rec.length()<=3)) {
 			ok = 0;
 			System.out.println(password1rec + "!=" + password2rec);
 			System.out.println("4 mal");
 		}
 
+		else {}
+
+		System.out.println("Empieza el metodo"+ok);
 		
 
-		else {
-
-			System.out.println(ok);
-			System.out.println("Todo bn");
-			return ok;
-
-		}
 		// String regex = "[a-zA-Z0-9\\._\\-]{3,}";
 		// OR || OR//
 
@@ -64,81 +74,28 @@ public class TestDAO {
 
 	}
 
-	public boolean subidatest(Double anxiedad, Double depresion, Double estres, Double anxiedadsocial) throws SQLException {
-		
-		boolean ok=false;
-		
-		String url = "jdbc:mysql://localhost/PsicoCare";
 
-		 Connection conn = datasource.getConnection();
-		conn.setAutoCommit(false);
-		try {	
-		String sql = "INSERT INTO test( respuesta1, respuesta2, respuesta3, respuesta4, respuesta5, anxiety, depression, social_anxiety, stress) VALUES (?,?,?,?,?,?,?,?,?);";
-		
-		
-		
-		PreparedStatement psmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-		psmt.setInt(1,1);//Se generan solos o me va a tocar darle al AI?//
-		psmt.setInt(2,2 );
-		psmt.setInt(3,3 );
-		psmt.setInt(4,4 );
-		psmt.setInt(5,5 );
-		psmt.setDouble(6, anxiedad );
-		psmt.setDouble(7, depresion);
-		psmt.setDouble(8, estres );
-		psmt.setDouble(9, anxiedadsocial);
 	
-		
-		psmt.executeUpdate();
-
-		ResultSet rs = psmt.getGeneratedKeys();
-		
-
-			int idtablausuario_test = rs.getInt(1);
-		
-
-		rs.close();
-		psmt.close();
-
-		// INSERTAR CLIENTE_CUENTA
-		sql = "	INSERT INTO test_usuario(tid, resultados) VALUES (?);";
-		psmt = conn.prepareStatement(sql);
-		
-		psmt.setInt(1, idtablausuario_test);
-		//Aqui identificador de usuario, de momento se meten valores manualmente, habra que sacarlos de get session
-
-		psmt.executeUpdate();
-		ok=true;
-		psmt.close();
-
-		conn.commit();
-	
-		} catch (Exception e) {
-			System.out.println("Excepcion tx:" + e.getMessage());
-			conn.rollback();
-			throw new SQLException();
-		}
-
-		conn.close();
-		return ok;
-	}
 
 	public boolean validatecomponentes(Double anxiedad, Double depresion, Double estres, Double anxiedadsocial) {
-
+//Los componentes son %s
 		boolean ok=false;
 		
 
 		if ((anxiedad instanceof Double)&&(anxiedad<=100)&&(depresion instanceof Double)&&(depresion<=100)&&(estres instanceof Double)&&(estres<=100)&&(anxiedadsocial instanceof Double)&&(anxiedadsocial<=100)) {
 			//
-			ok=true;
+			ok=true;System.out.println("Las componentes estan bien");
 			
 		}
 
-		else {ok=false;}
+		else {ok=false;System.out.println("Las componentes estan mal");}
 		
 		
 		return ok;
 	}
+	
+	
+	
 
 	
 }

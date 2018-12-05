@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
+<<<<<<< HEAD
   <runtime name="Apache Tomcat v9.0 (5)"/>
+=======
+
+  <runtime name="Apache Tomcat v9.0"/>
+>>>>>>> 10ca1c7dc902a9a87836564b48302df551a84fea
   <fixed facet="wst.jsdt.web"/>
   <installed facet="java" version="1.5"/>
   <installed facet="jst.web" version="2.5"/>
