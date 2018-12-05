@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,28 +23,28 @@
 
         <div id="anxiety">
          <h2>Anxiety</h2><!-- Los progress id son para que radargraph.js coja los valores a representar -->
-            <progress id="progressbaranxiety" min="0" max="100" value="${anxiety}"></progress>
+            <progress id="progressbaranxiety" min="0" max="100"  value="${anxiety}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
            
         </div>
 
         <div id="depression">
             <h2>Depression</h2>
-            <progress id="progressbardepression" min="0" max="100" value="${depression}"></progress>
+            <progress id="progressbardepression" min="0" max="100"  value="${depression}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
             
         </div>
 
         <div id="stress">
             <h2>Stress</h2>
-            <progress id="progressbarstress" min="0" max="100" value="${stress}"></progress>
+            <progress id="progressbarstress" min="0" max="100"  value="${stress}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
             
         </div>
 
         <div id="socialanxiety"><!--colores de las graficas foto-->
             <h2>Social Anxiety</h2>
-            <progress id="progressbarsocialanxiety" min="0" max="100" value="${socialanxiety}"></progress>
+            <progress id="progressbarsocialanxiety" min="0" max="100"  value="${socialanxiety}"></progress>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatem vel sapiente neque expedita, magnam quod, labore earum odio consequuntur? Asperiores pariatur quam iure eum dignissimos eveniet dicta temporibus!</p>
            
         </div>
