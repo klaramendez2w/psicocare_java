@@ -1,5 +1,7 @@
 package com.psicocare.models;
 
+import java.sql.SQLException;
+
 public class User {
 	
 	private int id;
@@ -45,5 +47,15 @@ public class User {
 	public void setTest(Test test) {
 		this.test = test;
 	}
+	
+	
+	
+	
+	
+
+	
+
+
+
 	
 }

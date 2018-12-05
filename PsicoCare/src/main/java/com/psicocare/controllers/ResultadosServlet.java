@@ -17,18 +17,21 @@ public class ResultadosServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// Capturar respuestas de la sesion//
-		String R1="5";
-		String R2="5";
-		String R3="5";
-		String R4="5";
-		String R5="5";
+		
+		   HttpSession session = request.getSession();
+
+		int R1=(Integer) session.getAttribute("answer1");
+		int R2=(Integer) session.getAttribute("answer2");
+		int R3=(Integer) session.getAttribute("answer3");
+		int R4=4;
+		int R5=(Integer) session.getAttribute("answer5");
 
 		// Parseamos como double las respuestas de la sesion//
-		Double R1b=Double.parseDouble(R1);
-		Double R2b=Double.parseDouble(R2);
-		Double R3b=Double.parseDouble(R3);
-		Double R4b=Double.parseDouble(R4);
-		Double R5b=Double.parseDouble(R5);
+		Double R1b=(double) R1;
+		Double R2b=(double) R2;
+		Double R3b=(double) R3;
+		Double R4b=(double) R4;
+		Double R5b=(double) R5;
 
 	// MEtodos que generan las 4 componentes, Quizas es mejor que sean metodos desde un modelo?//		
 		Double Anxiety = R1b+R2b+R3b+R4b+R5b;
@@ -45,7 +48,6 @@ public class ResultadosServlet extends HttpServlet {
 
 		//Los metemos en la sesion con los nombres indicados//
 		
-		   HttpSession session = request.getSession();
 		    session.setAttribute("Anxiety", Anxiety);		
 		    session.setAttribute("Depression", Anxiety);		
 		    session.setAttribute("Stress", Stress);		
