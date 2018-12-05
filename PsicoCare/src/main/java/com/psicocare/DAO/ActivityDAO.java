@@ -28,7 +28,10 @@ public class ActivityDAO extends DAO {
 		Activity resActivity=null;
 
 		// establecemos conexion
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 6b25c0624a9db539e77c197c43e01bf424911a99
 		String url="jdbc:mysql://localhost/psicocare";
 		Connection conexion = DriverManager.getConnection(url, "root", "root");
 		String sql = "SELECT aid, statement, value, description, content, about, countdown FROM actividad WHERE aid=?";			
