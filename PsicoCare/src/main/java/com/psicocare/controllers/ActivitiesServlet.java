@@ -1,6 +1,8 @@
 package com.psicocare.controllers;
 
 import java.io.IOException;
+import java.sql.SQLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,21 +32,42 @@ public class ActivitiesServlet extends HttpServlet {
 			response.sendRedirect("login");
 		
 		}*/
+//		String aidrec = request.getParameter("aid");
+//		Activity unContent = null;
+//		try {
+//			
+//			int aidint = Integer.parseInt(aidrec);
+//			
+//			unContent = ActivityDAO.getInstance().getActivityByAid(aidint);
+//			request.setAttribute("unContent", unContent);
+//			
+//			
+//		}catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		request.getRequestDispatcher("/activityGeneral.jsp").forward(request, response);	
+//	}
 		String aidrec = request.getParameter("aid");
-		Activity unContent = null;
+
+		int aidInt = Integer.parseInt(aidrec);
+
+		Activity myActivity = null;
 		try {
+			myActivity = ActivityDAO.getInstance().getActivityByAid(aidInt);
 			
-			int aidint = Integer.parseInt(aidrec);
+			System.out.println(aidInt);
 			
-			unContent = ActivityDAO.getInstance().getActivityByAid(aidint);
-			
-		}catch (Exception e) {
-			// TODO Auto-generated catch block
+		} catch (SQLException e) {
 			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+ System.out.println("Exception:"+e.getMessage());
 		}
-		request.setAttribute("unContent", unContent);
+		request.setAttribute("miActivity", myActivity);
 		request.getRequestDispatcher("/activityGeneral.jsp").forward(request, response);
 	}
+	
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	

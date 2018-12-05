@@ -78,8 +78,15 @@
    <servlet-name>HomeActivitiesServlet</servlet-name>
    <url-pattern>/homeactivities</url-pattern>
  </servlet-mapping>
-</web-app>
-
- 
+<servlet>
+    <description></description>
+    <display-name>ProgressServlet</display-name>
+    <servlet-name>ProgressServlet</servlet-name>
+    <servlet-class>com.psicocare.controllers.ProgressServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgressServlet</servlet-name>
+    <url-pattern>/progress</url-pattern>
+  </servlet-mapping>
 </web-app>
 
