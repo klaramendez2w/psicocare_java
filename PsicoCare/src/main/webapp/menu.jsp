@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="./CSS/csgeneral.css">
 <link rel="stylesheet" href="./CSS/menu.css">
 
-<title>Document</title>
+<title>MENU</title>
 </head>
 
 <body>
@@ -70,13 +70,14 @@
 				<form method="post">
 					<div class="input-field col s12">
 						<select name="aid">
-							<option value="" disabled selected></option>
-							<option value="1">STRESSED</option>
-							<option value="4" >ANXIOUS</option>
-							<option value="2" >DEPRESSED</option>
-							<option value="3">LONELY</option>
+							<option value="" disabled selected>${myActivity.value}</option>
+							<option value="4" >stressed</option>
+							<option value="3" >anxious</option>
+							<option value="2" >depressed</option>
+							<option value="1">lonely</option>
 						</select> <label></label>
 						<button>FILTRAR</button>
+						
 					</div>
 				</form>
 			</div>
@@ -99,7 +100,7 @@
 					<div class="row">
 						<div id="boton1" class="grid-example col s6 m6">
 							<a class="waves-effect waves-light btn-large"
-								href="./editarcuenta?aid=${myActivity.aid}"><span class="flow-text">
+								href="./activityGeneral?aid=${myActivity.aid}"><span class="flow-text">
 								</span>${myActivity.statement}</a>
 						</div>
 					</div>

@@ -31,9 +31,11 @@ public class MenuServlet extends HttpServlet {
 
 		Activity myActivity = null;
 		try {
-			myActivity = ActivityDAO.getInstance().getActivityByAid(aidInt);
+			myActivity = ActivityDAO.getInstance().getActivityByAid(aidInt);			
 			
-			System.out.println(aidInt);
+			System.out.println("myActivity: "+ myActivity);
+			
+			request.setAttribute("myActivity", myActivity);
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -41,7 +43,7 @@ public class MenuServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 
-		request.setAttribute("miActivity", myActivity);
+		
 		
 		
 		
