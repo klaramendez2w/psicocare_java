@@ -63,11 +63,11 @@ public class RegisterServlett extends HttpServlet {
 		
 		
 		
-		double R1=(Integer) session.getAttribute("answer1");
-		double R2=(Integer) session.getAttribute("answer2");
-		double R3=(Integer) session.getAttribute("answer3");
+		double R1=(Integer) session.getAttribute("respuesta1");
+		double R2=(Integer) session.getAttribute("respuesta2");
+		double R3=(Integer) session.getAttribute("respuesta3");
 		double R4=4;
-		double R5=(Integer) session.getAttribute("answer5");
+		double R5=(Integer) session.getAttribute("respuesta5");
 		// Obtener usuario de la sesion//
 		// Comprobar nombre en resultados//
 

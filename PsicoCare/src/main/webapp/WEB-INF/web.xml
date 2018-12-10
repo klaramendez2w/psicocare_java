@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 <web-app version="3.1">
 
@@ -8,8 +8,7 @@
         </description>
    <display-name>TakeTest1Servlet</display-name>
    <servlet-name>TakeTest1Servlet</servlet-name>
-   <servlet-class>com.psicocare.controllers.TakeTest1Servlet
-        </servlet-class>
+   <servlet-class>com.psicocare.controllers.TakeTest1Servlet</servlet-class>
  </servlet>
  <servlet>
    <description>

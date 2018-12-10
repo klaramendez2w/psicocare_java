@@ -67,7 +67,7 @@
 	<section class="container">
 		<div class="row">
 			<div class="grid-example col s12 m6">
-				<a class="waves-effect waves-light btn-large" href="./activities?aid=3"><span
+				<a class="waves-effect waves-light btn-large" href="./activities?aid=${3}"><span
 					class="flow-text"></span>Keep Calm</a>
 			</div>
 			<div class="grid-example col s12 m6">
